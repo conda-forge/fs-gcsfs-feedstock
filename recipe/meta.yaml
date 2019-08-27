@@ -19,7 +19,7 @@ requirements:
   host:
     - python >=3.5
     - pip
-    - setuptools-scm
+    - setuptools_scm
   run:
     - python >=3.5
     - google-cloud-storage >=1.10.0,<2
