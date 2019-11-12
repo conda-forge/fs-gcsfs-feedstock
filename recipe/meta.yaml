@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.5
-    - google-cloud-storage >=1.10.0,<2
+    - google-cloud-storage >=1.20.0,<2
     - fs >=2.0.0,<3
 
 test:
