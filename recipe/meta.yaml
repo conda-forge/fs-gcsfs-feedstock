@@ -1,6 +1,6 @@
 {% set name = "fs-gcsfs" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "76a2bb392c4c9db11fd82f7b48c317762642cab768d1c5453edf4acaac3e81c8" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "9868e555ee300b81f6a031be90b8c2bfa32b40b01faa1932cd019531d6d73892" %}
 
 package:
   name: {{ name|lower }}
