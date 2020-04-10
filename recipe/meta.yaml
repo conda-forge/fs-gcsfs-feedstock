@@ -1,6 +1,6 @@
 {% set name = "fs-gcsfs" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "9868e555ee300b81f6a031be90b8c2bfa32b40b01faa1932cd019531d6d73892" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "1229ed7eb32669063ce284248089b625d1f08064ceec98f7ab4f0059a4993ab5" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
