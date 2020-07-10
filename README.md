@@ -5,7 +5,7 @@ Home: https://github.com/Othoz/gcsfs
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python filesystem abstraction of Google Cloud Storage (GCS) implemented as a PyFilesystem2 extension
 
