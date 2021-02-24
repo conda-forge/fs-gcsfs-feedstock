@@ -5,11 +5,13 @@ Home: https://github.com/Othoz/gcsfs
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fs-gcsfs-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python filesystem abstraction of Google Cloud Storage (GCS) implemented as a PyFilesystem2 extension
 
+Development: https://github.com/Othoz/gcsfs
 
+Documentation: https://fs-gcsfs.readthedocs.io/
 
 Current build status
 ====================
@@ -116,7 +118,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@birnbaum](https://github.com/birnbaum/)
 * [@mathiaseitz](https://github.com/mathiaseitz/)
 * [@trendelkampschroer](https://github.com/trendelkampschroer/)
 
