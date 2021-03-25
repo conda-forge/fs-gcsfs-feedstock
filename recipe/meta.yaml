@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -22,11 +22,11 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.5
-    - fs ~=2.0
-    - google-cloud-storage ~=1.10
-    - urllib3 ~=1.25
-    - packaging ~=20.0
-    - requests ~=2.20
+    - fs >=2,<3
+    - google-cloud-storage >=1.10,<2
+    - urllib3 >=1.25,<2
+    - packaging >=20,<21
+    - requests >=2.20,<3
 
 test:
   imports:
