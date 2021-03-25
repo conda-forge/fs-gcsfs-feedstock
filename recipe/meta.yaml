@@ -22,8 +22,11 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.5
-    - google-cloud-storage >=1.10.0,<2
-    - fs >=2.0.0,<3
+    - fs ~=2.0
+    - google-cloud-storage ~=1.10
+    - urllib3 ~=1.25
+    - packaging ~=20.0
+    - requests ~=2.20
 
 test:
   imports:
