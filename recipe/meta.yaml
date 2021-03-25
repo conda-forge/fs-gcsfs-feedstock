@@ -1,6 +1,6 @@
 {% set name = "fs-gcsfs" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "e0b9cc12de57e85082e354678325c6ee53920776e6b81a88b62c53a4fcb0db59" %}
+{% set version = "1.4.5" %}
+{% set sha256 = "44b615e4fcbf27d770cce83664fed8c6930501ce949d8be80ab42c4f0806aa9c" %}
 
 package:
   name: {{ name|lower }}
@@ -22,8 +22,11 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.5
-    - google-cloud-storage >=1.10.0,<2
-    - fs >=2.0.0,<3
+    - fs ~=2.0
+    - google-cloud-storage ~=1.10
+    - urllib3 ~=1.25
+    - packaging ~=20.0
+    - requests ~=2.20
 
 test:
   imports:
