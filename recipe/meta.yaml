@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - fs >=2,<3
     - google-cloud-storage >=1.0,<3
     - urllib3 >=1.25,<2
@@ -29,6 +29,8 @@ requirements:
     - requests >=2.20,<3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fs_gcsfs
 
